@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Congrats !"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textAllCaps="true"
+            android:textAlignment="center"/>
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="300dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/congrats" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="You guessed right number"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="120dp"
+                android:id="@+id/btnGotIt"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="GOT IT"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_btn_gotit"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

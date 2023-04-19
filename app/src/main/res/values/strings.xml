@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GuessNumber</string>
+    <string name="select_1_number">Select <b>1</b> Number</string>
+</resources>
